@@ -53,10 +53,29 @@ class UserController extends Controller {
 	}
 
 	public function edit() {
-		echo "EDIT";
+
+		$userManager = new UserManager();
+
+		$user = $userManager-> find($_GET['user']);
+
+		$this->render('user/edit.html.php', [
+			'user' => $user
+		]);
 	}
 
+
 	public function delete() {
-		echo "DELETE";
+		
+		// Select puis delete
+		$userManager = new UserManager();
+
+		$user = $userManager->find($_GET['user']);
+
+		$userManager->delete($user);
+
+		header('Location: index.php?ctrl=user&method=list'); // renvoi vers la page d'accueil
+
+		
+
 	}
 }

@@ -1,4 +1,5 @@
 <div class="container">
+
     <h1>User management</h1>
 
     <div class="card">
@@ -24,4 +25,3 @@
 <?php if (!empty($errors)){ echo '<div class="alert alert-danger">'.implode("<br>", $errors).'</div>';} ?>
 
 <?php if ($form_sent && empty($errors)){echo '<div class="alert alert-success"> Utilisateur ajouté ! </div>';}?>
-      
