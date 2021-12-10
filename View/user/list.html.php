@@ -22,6 +22,8 @@
 							<a class="btn btn-primary" href="index.php?ctrl=user&method=edit&user=<?= $user->getId(); ?>">Edit
 							</a>
 							<a onclick="return confirm('Confirmer la suppression.');" class="btn btn-danger" href="index.php?ctrl=user&method=delete&user=<?= $user->getId(); ?>">Delete</a>
+							<a class="btn btn-success" href="index.php?ctrl=user&method=create">Add</a>
+							</a>
 						</td>
 
 					</tr>
