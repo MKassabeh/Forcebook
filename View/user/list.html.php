@@ -28,9 +28,9 @@
 				<?php endforeach; ?>
 			</tbody>
 		</table>
-		
+
 	</div>
-	
+
 </div>
 <div class="container text-center"><a class="btn btn-success" href="index.php?ctrl=user&method=create">Add a new user</a>
-			</a></div>
+	</a></div>
