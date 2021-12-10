@@ -4,8 +4,16 @@ class PostController extends Controller
 {
 	public function list()	{
 		
-		$this->render('post/list.html.php');
-		echo 'LISTE POSTS';
+		//Je fais appel à mon manager
+		$postManager = new PostManager();
+
+		//Je lui demande la liste des utilisateurs
+		$posts = $postManager->findAll();
+
+		//Je transmets cette liste à la vue
+		$this->render('post/list.html.php', [
+			'posts' => $posts
+		]);
 	}
 
 	public function create()

@@ -18,16 +18,16 @@
             USERS
           </h6>
           <p>
-            <a href="index.php?ctrl=user&method=list" class="text-reset">List</a>
+            <a href="index.php?ctrl=user&method=list" class="text-reset">List (terminé)</a>
           </p>
           <p>
-            <a href="index.php?ctrl=user&method=create" class="text-reset">Create</a>
+            <a href="index.php?ctrl=user&method=create" class="text-reset">Create (terminé)</a>
           </p>
           <p>
-            <a href="index.php?ctrl=user&method=list" class="text-reset">Edit</a>
+            <a href="index.php?ctrl=user&method=list" class="text-reset">Edit (terminé)</a>
           </p>
           <p>
-          <a href="index.php?ctrl=user&method=list" class="text-reset">Delete</a>
+          <a href="index.php?ctrl=user&method=list" class="text-reset">Delete (terminé)</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -39,7 +39,7 @@
             POSTS
           </h6>
           <p>
-            <a href="index.php?ctrl=post&method=list" class="text-reset">List</a>
+            <a href="index.php?ctrl=post&method=list" class="text-reset">List (terminé)</a>
           </p>
           <p>
             <a href="index.php?ctrl=post&method=create" class="text-reset">Create</a>
