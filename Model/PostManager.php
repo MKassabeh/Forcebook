@@ -1,8 +1,8 @@
 <?php
 
-require_once 'User.php';
+require_once 'Post.php';
 
-class UserManager extends Manager
+class PostManager extends Manager
 {
     public function findAll(): array
     {
@@ -52,17 +52,22 @@ class UserManager extends Manager
         return $post;
     }
 
-    public function create(User $user): void
+    public function create(Post $post): void
+    {
+        $sql = 'INSERT INTO post (created_by, content, created_at) VALUES (:created_by, :content, :created_at);';
+        $query = $this->bdd->prepare($sql);
+        $query->bindValue(':created_by', $post->getCreated_by());
+        $query->bindValue(':content', $post->getContent());
+        $query->bindValue(':created_at', new DateTime("now"));
+        $query->execute();
+    }
+
+    public function update(Post $post): void
     {
         
     }
 
-    public function update(User $user): void
-    {
-        
-    }
-
-    public function delete(User $user): void
+    public function delete(Post $post): void
     {
         
     }
